@@ -14,7 +14,7 @@ let package = Package(
     products: [
         .library(
             name: "libPhoneNumber",
-            targets: ["libPhoneNumber"],
+            targets: ["libPhoneNumber"]
         ),
         .library(
             name: "libPhoneNumberGeocoding",
@@ -32,12 +32,12 @@ let package = Package(
             resources: [
                 .copy("libPhoneNumberMetaDataForTesting.zip")
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "."
         ),
         .target(
             name: "libPhoneNumberInternal",
             path: "libPhoneNumberInternal",
-            publicHeadersPath: ".",
+            publicHeadersPath: "."
         ),
         .target(
             name: "libPhoneNumber",
@@ -61,7 +61,7 @@ let package = Package(
                 "libPhoneNumber",
                 "libPhoneNumberTestsCommon",
             ],
-            path: "libPhoneNumberTests",
+            path: "libPhoneNumberTests"
         ),
         .target(
             name: "libPhoneNumberGeocodingMetaData",
@@ -69,7 +69,7 @@ let package = Package(
             resources: [
                 .copy("GeocodingMetaData.bundle")
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "."
         ),
         .target(
             name: "libPhoneNumberGeocoding",
@@ -82,7 +82,7 @@ let package = Package(
                 "README.md",
                 "Info.plist",
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "."
         ),
         .testTarget(
             name: "libPhoneNumberGeocodingTests",
@@ -101,7 +101,7 @@ let package = Package(
                 "libPhoneNumber",
             ],
             path: "libPhoneNumberShortNumberInternal",
-            publicHeadersPath: ".",
+            publicHeadersPath: "."
         ),
         .target(
             name: "libPhoneNumberShortNumber",
@@ -113,7 +113,7 @@ let package = Package(
                 "README.md",
                 "Info.plist",
             ],
-            publicHeadersPath: ".",
+            publicHeadersPath: "."
         ),
         .testTarget(
             name: "libPhoneNumberShortNumberTests",
@@ -121,7 +121,7 @@ let package = Package(
                 "libPhoneNumberShortNumber",
                 "libPhoneNumberTestsCommon",
             ],
-            path: "libPhoneNumberShortNumberTests",
+            path: "libPhoneNumberShortNumberTests"
         ),
     ]
 )
